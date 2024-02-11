@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        i
+        <div>
+            iA
+        </div>
+    </div>
+    <div>
+        AB
+    </div>
+
+    <div id="container"></div>
+</body>
+<script>
+    // console.log(Math.min(4, 5));
+
+    // function MyMathMin(number1, number2){
+    //     if(number1 < number2){
+    //         return number1;
+    //     }
+
+    //     return number2;
+    // }
+
+    // const MyMathObject = {
+    //     min: MyMathMin
+    // }
+
+    // console.log(MyMathObject.min(4, true));
+
+    // const myObject = {
+    //     min: '1'
+    // }
+
+    // myObject.min = myObject.min + 5;
+    // myObject.min += 5;
+
+
+    // console.log(myObject.min);
+
+
+    const arr1 = [1, 2, 5];
+    const array2 = ['a', 'b', 'c'];
+    const array3 = [
+        {name: 'tobi', textColor: 'red'},
+        {name: 'ahmed', textColor: 'blue'},
+        {name: 'tolu', textColor: 'yellow'}
+    ]
+
+    let name = 'olutobi';
+    name = name.toUpperCase(name);
+
+    const container = document.getElementById('container');
+
+
+    array3.forEach(function(individualObject, index) {
+        // console.log('No', index, individualObject);
+        container.innerHTML += `<h1 style="color:${individualObject.textColor}">My name is ${individualObject.name}</h1>`
+
+    });
+
+</script>
+</html>
